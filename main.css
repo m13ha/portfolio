@@ -1,0 +1,281 @@
+html,
+body {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+    
+}
+
+body, html {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5%;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    margin: 5px !important;
+}
+
+.container, .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+
+.headers {
+    width: 80%;
+}
+
+.heading {
+    font-size: 24px;
+    letter-spacing: 2px;
+    float: right !important;
+    clear: left;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.heading h1 {
+    font-size: 100%;
+}
+
+
+.image-container {
+    height: auto;
+    width: 20%;
+    float: right;
+    padding-left: 50px
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-image: url('./images/2018-04-17-150706.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.skill {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.info-container {
+    width: 80%;
+    height: auto;
+    color: #fff;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 100%;
+}
+
+.language-icon-container {
+    width: 20%;
+    padding-left: 3%;
+}
+
+.html-info-container, .css-info-container, .js-info-container {
+    width: 80%;
+    float: right;
+}
+
+.html-info, .css-info, .js-info {
+    width: 80%;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: none;
+    padding-left: 3%;
+}
+
+.css-info {
+    margin-top: 10px;
+}
+
+
+
+.icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 40px;
+    float: left;
+    clear: both;
+}
+
+.html5{
+    background-image: url('./images/html-5-logo.svg');
+    background-size: contain;
+    transition: transform 2s ease;
+}
+
+.css3{
+    background-image: url('./images/css-3-logo.svg');
+    background-size: contain;
+    transition: transform 2s ease;
+    
+}
+
+.js{
+    background-image: url('./images/js.svg');
+    background-size: contain;
+    transition: transform 2s ease;    
+}
+
+.rotate {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg); /* Standard syntax */
+}
+
+
+.social-icon-container-2 {
+    width: 50%;
+    height: 0px;
+    display: none;
+    flex-wrap: wrap;
+    margin: auto;
+    transition:  1s ease;
+}
+
+
+
+.social-icon {
+    margin-top: 40px;
+    margin-right: 37px;
+}
+
+
+
+.show {
+  display: flex;
+  height: auto;
+}
+
+
+
+
+@media all and (max-width: 991px) {  
+     .info-container{
+         width: 100%;
+     }
+
+ } 
+
+
+
+@media all and (max-width: 768px) { 
+    .heading {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+
+    .image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .html-info, .css-info, .js-info {
+        font-size: 1em;
+    }
+
+    .icon {
+        height: 70px;
+        width: 70px;
+    }
+
+     .social-icon-container-2 {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+} 
+
+
+
+
+
+@media all and (max-width: 575px) { 
+    .headers {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        float: none !important;
+        padding: 0px;
+    }
+
+    .image {
+        margin: auto;
+        float: none;
+    }
+
+    .heading {
+        float: none !important;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .info-container {
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+
+    .language-icon-container {
+        width: 100% !important;
+        padding: 0px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;;
+        margin: auto !important;
+        float: none;
+        margin-top: 20px !important;
+    }
+
+    .html-info-container, .css-info-container, .js-info-container {
+            width: 100%;
+            float: none;
+            text-align: center;
+            
+        }
+
+    .html-info, .css-info, .js-info {
+        width: 100%;
+        height: 0px;
+        display: block;
+        overflow: hidden;
+        transition: height 2s ease;
+        padding-left: 0px;
+    }   
+
+    .grow {
+        height: auto;
+    }
+
+    .social-icon-container-2 {
+        margin: 0px;
+        width: 100%;
+    }
+ }
