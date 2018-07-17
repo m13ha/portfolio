@@ -15,7 +15,12 @@ body, html {
 
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 5px !important;
 }
 
@@ -28,10 +33,17 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 .header {
     height: auto;
     width: 100%;
-    display: inline-block;
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
 }
+
+
+
+.intro {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 
 .headers {
@@ -41,8 +53,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 .heading {
     font-size: 24px;
     letter-spacing: 2px;
-    float: right !important;
-    clear: left;
     text-align: right;
     margin-right: 20px;
 }
@@ -55,7 +65,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 .image-container {
     height: auto;
     width: 20%;
-    float: right;
     padding-left: 50px
 }
 
@@ -73,20 +82,17 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 .skill {
     width: 100%;
     height: auto;
-    display: flex;
 }
 
 .info-container {
-    width: 80%;
+    width: 100%;
     height: auto;
     color: #fff;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .info {
     width: 100%;
+    display: flex;    
 }
 
 .language-icon-container {
@@ -95,17 +101,15 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 }
 
 .html-info-container, .css-info-container, .js-info-container {
-    width: 80%;
-    float: right;
+    width: 70%;
+    display: none;
 }
 
 .html-info, .css-info, .js-info {
-    width: 80%;
     padding-top: 20px;
     font-size: 20px;
     margin-top: 20px;
-    display: none;
-    padding-left: 3%;
+    margin-left: 30px;
 }
 
 .css-info {
@@ -118,8 +122,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     height: 100px;
     width: 100px;
     margin-top: 40px;
-    float: left;
-    clear: both;
 }
 
 .html5{
@@ -148,11 +150,9 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 .social-icon-container-2 {
-    width: 50%;
-    height: 0px;
+    width: 100%;
     display: none;
-    flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
     transition:  1s ease;
 }
 
@@ -214,6 +214,12 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 @media all and (max-width: 575px) { 
+    .intro {
+        display: block;
+    }
+   
+   
+   
     .headers {
         width: 100%;
         text-align: center;
@@ -221,7 +227,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 
     .image-container {
         width: 100%;
-        float: none !important;
         padding: 0px;
     }
 
@@ -231,18 +236,16 @@ h1 , h2 , h3 , h4 , h5 , h6 {
     }
 
     .heading {
-        float: none !important;
         text-align: center;
         margin: 0px;
     }
 
-    .info-container {
-        display: inline-block;
-        flex-wrap: nowrap;
+    .info {
+        flex-wrap: wrap;
     }
 
     .language-icon-container {
-        width: 100% !important;
+        width: 100% ;
         padding: 0px;
     }
 
@@ -250,24 +253,21 @@ h1 , h2 , h3 , h4 , h5 , h6 {
         width: 100px;
         height: 100px;;
         margin: auto !important;
-        float: none;
         margin-top: 20px !important;
     }
 
     .html-info-container, .css-info-container, .js-info-container {
             width: 100%;
-            float: none;
-            text-align: center;
-            
+            text-align: center;    
         }
 
     .html-info, .css-info, .js-info {
-        width: 100%;
         height: 0px;
         display: block;
         overflow: hidden;
         transition: height 2s ease;
         padding-left: 0px;
+        margin-left: 0px;
     }   
 
     .grow {
